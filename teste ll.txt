@@ -1,0 +1,134 @@
+ALUNO-30@ThiagoOrmenezi MINGW64 ~
+$ git config --global user.name "systemcad"
+
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~
+$
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~
+$ git config --global user.email "caio.s.madruga@gmail.com"
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~
+$ cd documents
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents
+$ dir
+Modelos\ Personalizados\ do\ Office  PAULO\ HENRIQUE\ ALVES\ PINHEIRO.docx
+My\ Music                            _GIT
+My\ Pictures                         desktop.ini
+My\ Videos                           tcc.docx
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents
+$ cd_git
+bash: cd_git: command not found
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents
+$ cd_GIT
+bash: cd_GIT: command not found
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents
+$ cd _GIT
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT
+$ git clone https://github.com/systemcad/projeto.git
+Cloning into 'projeto'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT
+$ cd projeto
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/ALUNO-30/Documents/_GIT/projeto/.git/
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        teste.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git add .
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   teste.txt
+
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git commit -m "primeiro"
+[main bb00639] primeiro
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 teste.txt
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ ^C
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git add .
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git commit -m "segundo"
+[main bf9de75] segundo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 read.txt
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        teste ll.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git add .
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git commit -m "terceiro"
+[main 01da6b5] terceiro
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 teste ll.txt
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git remote add origin https://github.com/systemcad/projeto.git
+error: remote origin already exists.
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ git  push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 628 bytes | 157.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/systemcad/projeto.git
+   ff949e1..01da6b5  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ ^C
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$ ^C
+
+ALUNO-30@ThiagoOrmenezi MINGW64 ~/documents/_GIT/projeto (main)
+$
